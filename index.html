@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Seld Confrence</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Brochure</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        <img src="https://live.staticflickr.com/4209/35060888414_dd162fbc75_b.jpg" width="200" height="200"
+            style="border: 1px solid black;">
+    </div>
+
+
+    <form action="results.html" method="GET">
+        <h1> Page </h1>
+
+        <p>Select your language/Choisissez votre langu/Seleccione su idioma</p>
+        <br>
+        <div>
+            <label for="language"> Language: </label>
+            <select name="language" id="language">
+                <option value="English">English</option>
+                <option label="Spanish">English</option>
+                <option label="French">French</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="name"> First Name: </label>
+            <input type="text" name="name" id="name" placeholder="First Name" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="lastname"> Surname: </label>
+            <input type="text" name="lastname" id="lastname" placeholder="Surname" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="gender"> Gender:</label>
+            <select name="gender" id="gender">
+                <option value="Male">Male</option>
+                <option label="Female">English</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="lastname"> Email:</label>
+            <input type="text" name="email" id="email" placeholder="email" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="phone number"> Phone Number:</label>
+            <input type="tel" name="phone number" id="phone number" placeholder="phone number" required>
+        </div>
+
+        <br>
+
+        <p>Select Your Leader Catagory</p>
+
+        <div>
+            <label for="catagory">Catagory: </label>
+            <select name="catagory" id="catagory">
+                <option value="Presidents">Presidents</option>
+                <option label="Secretaries & HR Directors">Secretary</option>
+                <option label="Tresurers">Tresurers</option>
+                <option value="Departmental Directors">Departmental Directors</option>
+                <option label="Administrator & Employee in Institution">Administrator & Employee in Institution</option>
+                <option label="Church Pastors">Church Pastors</option>
+                <option label="Church Elders">Church Elders</option>
+            </select>
+        </div>
+
+        <br>
+
+        <p>How will you participate?</p>
+        <div>
+            <label for="virtually"> Virtually</label>
+            <input type="radio" name="option" id="virtually" required>
+
+            <label for="in person">In person</label>
+            <input type="radio" name="option" id="in person" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="Current location">Country Where You Live?</label>
+            <input type="current location" name="current location" id="current location">
+        </div>
+
+        <br>
+
+        <p>Are you a U.S. citizen or permanent resident?</p>
+        <div>
+            <label for="citizen"> Yes </label>
+            <input type="radio" name="citizen" id="citizen" required>
+
+            <label for="citizen">No </label>
+            <input type="radio" name="citizen" id="citizen" required>
+        </div>
+
+        <br>
+
+        <p>Do you have a VISA to travel to the USA?</p>
+        <div>
+            <label for="travel"> Yes </label>
+            <input type="radio" name="travel" id="travel" required>
+
+            <label for="travel">No </label>
+            <input type="radio" name="travel" id="travel" required>
+
+            (If no, you should immediately make the request to the division for a letter to the US embassy in your
+            country)
+        </div>
+
+        <br>
+
+
+        <p>Have you received your COVID Vaccination?</p>
+        <div>
+            <label for="vaccinated "> Yes </label>
+            <input type="radio" name="vaccinated" id="vaccinated" required>
+
+            <label for="vaccinated">No </label>
+            <input type="radio" name="vaccinated" id="vaccinated" required>
+
+            (The US government requires all non-US Citizens and non-residents to be vaccinated for COVID for entry into
+            the USA.)
+        </div>
+
+        <br>
+
+
+        <p>Will you need hotel accommodation?</p>
+        <div>
+            <label for="accommodation"> Yes </label>
+            <input type="radio" name="accommodation" id="accommodation" required>
+
+            <label for="accommodation">No </label>
+            <input type="radio" name="accommodation" id="accommodation" required>
+
+        </div>
+
+        <br>
+
+        <div>
+            <label for="room"> What type of accommodation? </label>
+            <select name="room" id="room">
+                <option value="Single room ">Single room</option>
+                <option label="Double room one bed ">Double room one bed </option>
+                <option label="Double room two bed ">Double room two bed </option>
+            </select>
+        </div>
+
+        <br>
+
+        <div>
+            <p>Will your roommate be participating in the conference?</p>
+            <label for="participating">Yes</label>
+            <input type="radio" name="participating " id="participating" required>
+            <label for="participating">No</label>
+            <input type="radio" name="participating " id="participating" required>
+            (If yes, he/she needs to register separately.)
+        </div>
+
+        <br>
+
+        <div>
+            <p>What is the name of your roommate?</p>
+            <label for="roommate"> Name: </label>
+            <input type="text" name="roommate" id="roommate" placeholder="Name" required>
+        </div>
+
+        <br>
+
+        <div>
+            <p>What is the email address of your roommate?</p>
+            <label for="email"> Email: </label>
+            <input type="text" name="email" id="email" placeholder="Email" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="date">Arrival Date: </label>
+            <input type="date" name="date" id="date" min="2023-07-24" max="2023-07-28" required>
+            <label for="date">Departure Date: </label>
+            <input type="date" name="date" id="date" min="2023-07-24" max="2023-07-28" required>
+        </div>
+
+        <br>
+
+        <button type="submit"> Submit</button>
+
+
+    </form>
+    <footer class="bg-dark text-white py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">Footer content here</div>
+                <div class="col-md-6 text-right">© 2023 My Website</div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</html>
