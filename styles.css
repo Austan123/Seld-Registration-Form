@@ -17,3 +17,8 @@
 .custom-footer {
     background-color: rgb(67,131,144);
 }
+
+a:hover {
+    color: rgb(67,131,144) !important;
+}
+
