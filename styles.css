@@ -6,18 +6,29 @@
 
 /* fade in animation */
 @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 .custom-nav {
-    background-color: rgb(67,131,144);
+    background-color: rgb(67, 131, 144);
 }
 
 .custom-footer {
-    background-color: rgb(67,131,144);
+    background-color: rgb(67, 131, 144);
 }
 
 a:hover {
-    color: rgb(67,131,144) !important;
+    color: rgb(67, 131, 144) !important;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
