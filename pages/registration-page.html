@@ -42,67 +42,50 @@
             style="border: 1px solid black;">
     </div>
 
-
-    <form action="results.html" method="GET">
-        <h1> Page </h1>
-
-        <p>Select your language/Choisissez votre langu/Seleccione su idioma</p>
-        <br>
-        <div>
-            <label for="language"> Language: </label>
-            <select name="language" id="language">
-                <option value="English">English</option>
-                <option label="Spanish">English</option>
-                <option label="French">French</option>
-            </select>
+    <div class="wrapper">
+        <div class="title">
+            Registration Form
         </div>
+        <div class="form">
+            <div class="input_field">
+                <label> First Name:</label>
+                <input type="text" class="input" required>
 
-        <br>
+            </div>
+            <div class="input_field">
+                <label> Surname: </label>
+                <input type="text" class="input" required>
 
-        <div>
-            <label for="name"> First Name: </label>
-            <input type="text" name="name" id="name" placeholder="First Name" required>
+            </div>
+            <div class="input_field">
+                <label> Email Address:</label>
+                <input type="text" class="input" required>
+    
+            </div>
+            <div class="input_field">
+                <label> Phone Number:</label>
+                <input type="tel" class="input" required>
+            </div>
+    
+       
+        <div class="input_field">
+            <label> Gender:</label>
+            <div class="custom_select">
+                <select>
+                    <option value="">Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+
         </div>
-
-        <br>
-
-        <div>
-            <label for="lastname"> Surname: </label>
-            <input type="text" name="lastname" id="lastname" placeholder="Surname" required>
-        </div>
-
-        <br>
-
-        <div>
-            <label for="gender"> Gender:</label>
-            <select name="gender" id="gender">
-                <option value="Male">Male</option>
-                <option label="Female">English</option>
-            </select>
-        </div>
-
-        <br>
-
-        <div>
-            <label for="lastname"> Email:</label>
-            <input type="text" name="email" id="email" placeholder="email" required>
-        </div>
-
-        <br>
-
-        <div>
-            <label for="phone number"> Phone Number:</label>
-            <input type="tel" name="phone number" id="phone number" placeholder="phone number" required>
-        </div>
-
-        <br>
-
+       
+    </div>
+    <div class="custom_select">
         <p>Select Your Leader Catagory</p>
-
-        <div>
-            <label for="catagory">Catagory: </label>
+        <label>Catagory: </label>
             <select name="catagory" id="catagory">
-                <option value="Presidents">Presidents</option>
+                <option value="Presidents">President</option>
                 <option label="Secretaries & HR Directors">Secretary</option>
                 <option label="Tresurers">Tresurers</option>
                 <option value="Departmental Directors">Departmental Directors</option>
@@ -110,132 +93,92 @@
                 <option label="Church Pastors">Church Pastors</option>
                 <option label="Church Elders">Church Elders</option>
             </select>
-        </div>
-
-        <br>
-
+    </div>
+    
+    <div class="input_field">
         <p>How will you participate?</p>
-        <div>
-            <label for="virtually"> Virtually</label>
-            <input type="radio" name="option" id="virtually" required>
+        <label> Virtually</label>
+        <input type="radio" class="input" required>
 
-            <label for="in person">In person</label>
-            <input type="radio" name="option" id="in person" required>
+        <label for="in person">In person</label>
+        <input type="radio" name="option" id="in person" required>
         </div>
-
-        <br>
-
-        <div>
-            <label for="Current location">Country Where You Live?</label>
-            <input type="current location" name="current location" id="current location">
+        <div class="input_field">
+            <p>Are you a U.S. citizen or permanent resident?</p>
+            <label> Yes </label>
+            <input type="radio" class="input" required>
+    
+            <label>No </label>
+            <input type="radio" class="input" required>
+            </div>
+            <div class="input_field">
+                <p>Do you have a VISA to travel to the USA?</p>
+                <p>(If no, you should immediately make the request to the division for a letter to the US embassy in your
+                    country)</p>
+                <label> Yes </label>
+                <input type="radio" class="input" required>
+    
+                <label >No </label>
+                <input type="radio" name="travel" id="travel" required>
+    
+              
+            </div>
+            <div class="input_field">
+                <p>Have you received your COVID Vaccination?</p>
+                <p>  (The US government requires all non-US Citizens and non-residents to be vaccinated for COVID for entry into
+                    the USA.)</p>
+                <label> Yes </label>
+                <input type="radio" name="vaccinated" id="vaccinated" required>
+    
+                <label>No </label>
+                <input type="radio" name="vaccinated" id="vaccinated" required>
+              
+            </div>
+            <div class="input_field">
+                <p>Will you need hotel accommodation?</p>
+                <label> Yes </label>
+                <input type="radio" name="accommodation" id="accommodation" required>
+    
+                <label >No </label>
+                <input type="radio" name="accommodation" id="accommodation" required>
+            </div>
+            <div class="input_field">
+                <p>What is the name of your roommate?</p>
+                <label> Name: </label>
+                <input type="text" name="roommate" id="roommate" placeholder="Name" required>
+            </div>
+            <div class="input_field">
+                <p>What is the email address of your roommate?</p>
+                <label> Email: </label>
+                <input type="text" name="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="input_field">
+                <label >Arrival Date: </label>
+                <input type="date" name="date" id="date" min="2023-07-24" max="2023-07-28" required>
+                <label >Departure Date: </label>
+                <input type="date" name="date" id="date" min="2023-07-24" max="2023-07-28" required>
+            </div>
+            
+            <div class="inputfield">
+                <input type="submit" value="Register" class="btn">
+            </div>
+            <div class="input_field">
+                <label for="Current location">Country Where You Live?</label>
+                    <textarea class="textarea"></textarea>
+                </div>
+                </div>
+            </div>
+    
         </div>
-
-        <br>
-
-        <p>Are you a U.S. citizen or permanent resident?</p>
-        <div>
-            <label for="citizen"> Yes </label>
-            <input type="radio" name="citizen" id="citizen" required>
-
-            <label for="citizen">No </label>
-            <input type="radio" name="citizen" id="citizen" required>
+    </div>
+    </div>
+       
         </div>
-
-        <br>
-
-        <p>Do you have a VISA to travel to the USA?</p>
-        <div>
-            <label for="travel"> Yes </label>
-            <input type="radio" name="travel" id="travel" required>
-
-            <label for="travel">No </label>
-            <input type="radio" name="travel" id="travel" required>
-
-            (If no, you should immediately make the request to the division for a letter to the US embassy in your
-            country)
-        </div>
-
-        <br>
+       
+   
 
 
-        <p>Have you received your COVID Vaccination?</p>
-        <div>
-            <label for="vaccinated "> Yes </label>
-            <input type="radio" name="vaccinated" id="vaccinated" required>
 
-            <label for="vaccinated">No </label>
-            <input type="radio" name="vaccinated" id="vaccinated" required>
-
-            (The US government requires all non-US Citizens and non-residents to be vaccinated for COVID for entry into
-            the USA.)
-        </div>
-
-        <br>
-
-
-        <p>Will you need hotel accommodation?</p>
-        <div>
-            <label for="accommodation"> Yes </label>
-            <input type="radio" name="accommodation" id="accommodation" required>
-
-            <label for="accommodation">No </label>
-            <input type="radio" name="accommodation" id="accommodation" required>
-
-        </div>
-
-        <br>
-
-        <div>
-            <label for="room"> What type of accommodation? </label>
-            <select name="room" id="room">
-                <option value="Single room ">Single room</option>
-                <option label="Double room one bed ">Double room one bed </option>
-                <option label="Double room two bed ">Double room two bed </option>
-            </select>
-        </div>
-
-        <br>
-
-        <div>
-            <p>Will your roommate be participating in the conference?</p>
-            <label for="participating">Yes</label>
-            <input type="radio" name="participating " id="participating" required>
-            <label for="participating">No</label>
-            <input type="radio" name="participating " id="participating" required>
-            (If yes, he/she needs to register separately.)
-        </div>
-
-        <br>
-
-        <div>
-            <p>What is the name of your roommate?</p>
-            <label for="roommate"> Name: </label>
-            <input type="text" name="roommate" id="roommate" placeholder="Name" required>
-        </div>
-
-        <br>
-
-        <div>
-            <p>What is the email address of your roommate?</p>
-            <label for="email"> Email: </label>
-            <input type="text" name="email" id="email" placeholder="Email" required>
-        </div>
-
-        <br>
-
-        <div>
-            <label for="date">Arrival Date: </label>
-            <input type="date" name="date" id="date" min="2023-07-24" max="2023-07-28" required>
-            <label for="date">Departure Date: </label>
-            <input type="date" name="date" id="date" min="2023-07-24" max="2023-07-28" required>
-        </div>
-
-        <br>
-
-        <button type="submit"> Submit</button>
-
-
-    </form>
     <footer class="custom-footer text-white py-3">
         <div class="container">
             <div class="row">

@@ -1,3 +1,45 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: white;
+    padding: 0 10px;
+}
+
+.wrapper{
+max-width: 500px;
+width: 400%;
+background-color:  rgb(71, 132, 145);
+margin: 20px auto;
+padding:0 10px;
+box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+}
+
+.wrapper .title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.wrapper .form{
+    width: 100%;
+}
+
+.wrapper .form .input_field{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.wrapper .form .input_field label{
+width: 100%;
+
+
+}
 .conf-header {
     font-family: "Poppins";
     font-size: 85px;
