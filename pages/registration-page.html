@@ -37,53 +37,48 @@
         </div>
     </nav>
 
-    <div>
-        <img src="https://live.staticflickr.com/4209/35060888414_dd162fbc75_b.jpg" width="200" height="200"
-            style="border: 1px solid black;">
-    </div>
-
-    <div class="wrapper">
+    <div class="d-flex flex-column justify-content-center wrapper">
         <div class="title">
             Registration Form
         </div>
         <div class="form">
             <div class="input_field">
                 <label> First Name:</label>
-                <input type="text" class="input" required>
+                <input type="text" class="input w-100" required>
 
             </div>
             <div class="input_field">
                 <label> Surname: </label>
-                <input type="text" class="input" required>
+                <input type="text" class="input w-100" required>
 
             </div>
             <div class="input_field">
                 <label> Email Address:</label>
-                <input type="text" class="input" required>
-    
+                <input type="text" class="input w-100" required>
+
             </div>
             <div class="input_field">
                 <label> Phone Number:</label>
-                <input type="tel" class="input" required>
+                <input type="tel" class="input w-100" required>
             </div>
-    
-       
-        <div class="input_field">
-            <label> Gender:</label>
-            <div class="custom_select">
-                <select>
-                    <option value="">Select</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                </select>
+
+
+            <div class="input_field">
+                <label> Gender:</label>
+                <div class="custom_select">
+                    <select>
+                        <option value="">Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+
             </div>
 
         </div>
-       
-    </div>
-    <div class="custom_select">
-        <p>Select Your Leader Catagory</p>
-        <label>Catagory: </label>
+        <div class="custom_select">
+            <p>Select Your Leader Catagory</p>
+            <label>Catagory: </label>
             <select name="catagory" id="catagory">
                 <option value="Presidents">President</option>
                 <option label="Secretaries & HR Directors">Secretary</option>
@@ -93,89 +88,138 @@
                 <option label="Church Pastors">Church Pastors</option>
                 <option label="Church Elders">Church Elders</option>
             </select>
-    </div>
-    
-    <div class="input_field">
-        <p>How will you participate?</p>
-        <label> Virtually</label>
-        <input type="radio" class="input" required>
+        </div>
 
-        <label for="in person">In person</label>
-        <input type="radio" name="option" id="in person" required>
+        <div class="input_field">
+            <p>How will you participate?</p>
+            <label> Virtually</label>
+            <input type="radio" class="input" required>
+
+            <label for="in person">In person</label>
+            <input type="radio" name="option" id="in person" required>
         </div>
         <div class="input_field">
             <p>Are you a U.S. citizen or permanent resident?</p>
             <label> Yes </label>
             <input type="radio" class="input" required>
-    
+
             <label>No </label>
             <input type="radio" class="input" required>
-            </div>
-            <div class="input_field">
-                <p>Do you have a VISA to travel to the USA?</p>
-                <p>(If no, you should immediately make the request to the division for a letter to the US embassy in your
-                    country)</p>
-                <label> Yes </label>
-                <input type="radio" class="input" required>
-    
-                <label >No </label>
-                <input type="radio" name="travel" id="travel" required>
-    
-              
-            </div>
-            <div class="input_field">
-                <p>Have you received your COVID Vaccination?</p>
-                <p>  (The US government requires all non-US Citizens and non-residents to be vaccinated for COVID for entry into
-                    the USA.)</p>
-                <label> Yes </label>
-                <input type="radio" name="vaccinated" id="vaccinated" required>
-    
-                <label>No </label>
-                <input type="radio" name="vaccinated" id="vaccinated" required>
-              
-            </div>
-            <div class="input_field">
-                <p>Will you need hotel accommodation?</p>
-                <label> Yes </label>
-                <input type="radio" name="accommodation" id="accommodation" required>
-    
-                <label >No </label>
-                <input type="radio" name="accommodation" id="accommodation" required>
-            </div>
-            <div class="input_field">
-                <p>What is the name of your roommate?</p>
-                <label> Name: </label>
-                <input type="text" name="roommate" id="roommate" placeholder="Name" required>
-            </div>
-            <div class="input_field">
-                <p>What is the email address of your roommate?</p>
-                <label> Email: </label>
-                <input type="text" name="email" id="email" placeholder="Email" required>
-            </div>
-            <div class="input_field">
-                <label >Arrival Date: </label>
-                <input type="date" name="date" id="date" min="2023-07-24" max="2023-07-28" required>
-                <label >Departure Date: </label>
-                <input type="date" name="date" id="date" min="2023-07-24" max="2023-07-28" required>
-            </div>
-            
-            <div class="inputfield">
-                <input type="submit" value="Register" class="btn">
-            </div>
-            <div class="input_field">
-                <label for="Current location">Country Where You Live?</label>
-                    <textarea class="textarea"></textarea>
-                </div>
-                </div>
-            </div>
-    
+        </div>
+        <div class="input_field">
+            <p>Do you have a VISA to travel to the USA?</p>
+            <p>(If no, you should immediately make the request to the division for a letter to the US embassy in your
+                country)</p>
+            <label> Yes </label>
+            <input type="radio" class="input" required>
+
+            <label>No </label>
+            <input type="radio" name="travel" id="travel" required>
+
+
+        </div>
+        <div class="input_field">
+            <p>Have you received your COVID Vaccination?</p>
+            <p> (The US government requires all non-US Citizens and non-residents to be vaccinated for COVID for entry
+                into
+                the USA.)</p>
+            <label> Yes </label>
+            <input type="radio" name="vaccinated" id="vaccinated" required>
+
+            <label>No </label>
+            <input type="radio" name="vaccinated" id="vaccinated" required>
+
+        </div>
+        <div class="input_field">
+            <p>Will you need hotel accommodation?</p>
+            <label> Yes </label>
+            <input type="radio" name="accommodation" id="accommodation" required>
+
+            <label>No </label>
+            <input type="radio" name="accommodation" id="accommodation" required>
+        </div>
+        <div class="input_field">
+            <p>What is the name of your roommate?</p>
+            <label> Name: </label>
+            <input type="text" name="roommate" id="roommate" placeholder="Name" required>
+        </div>
+        <div class="input_field">
+            <p>What is the email address of your roommate?</p>
+            <label> Email: </label>
+            <input type="text" name="email" id="email" placeholder="Email" required>
+        </div>
+        <div class="input_field">
+            <label>Arrival Date: </label>
+            <input type="date" name="date" id="date" min="2023-07-24" max="2023-07-28" required>
+            <label>Departure Date: </label>
+            <input type="date" name="date" id="date" min="2023-07-24" max="2023-07-28" required>
+        </div>
+
+        <div class="inputfield">
+            <input type="submit" value="Register" class="btn">
+        </div>
+        <div class="input_field">
+            <label for="Current location">Country Where You Live?</label>
+            <textarea class="textarea w-100 px-2"></textarea>
+        </div>
+        <hr style="background-color: black;">
+        <div class="title">Travel Information</div>
+        <div class="input_field">
+            <label>Are you planning to arrive to the hotel EARLIER than July 24, 2023?</label>
+            <label>Yes</label>
+            <input type="radio" name="early-arrival">
+            <label>No</label>
+            <input type="radio" name="early-arrival">
+        </div>
+        <div class="input_field">
+            <label>Are you planning to leave the hotel LATER than July 27, 2023?</label>
+            <label>Yes</label>
+            <input type="radio" name="late-arrival">
+            <label>No</label>
+            <input type="radio" name="late-arrival">
+        </div>
+        <div>
+            <label>Arrival Date</label>
+            <input type="date" required>
+        </div>
+        <div>
+            <label>Arrival Time</label>
+            <input type="time" required>
+        </div>
+        <div>
+            <label>Airline and Arrival Flight Number</label>
+            <input type="textarea" required>
+        </div>
+        <div>
+            <label>Flying From</label>
+            <input type="textarea" required>
+        </div>
+        <div>
+            <label>Departure Date</label>
+            <input type="date" required>
+        </div>
+        <div>
+            <label>Departure Time</label>
+            <input type="time" required>
+        </div>
+        <div>
+            <label>Airline and departure flight number</label>
+            <input type="textarea" required>
+        </div>
+        <div>
+            <label>Flying to</label>
+            <input type="textarea" required>
         </div>
     </div>
     </div>
-       
-        </div>
-       
-   
+
+    </div>
+    </div>
+    </div>
+
+    </div>
+
+
 
 
 
@@ -187,6 +231,7 @@
             </div>
         </div>
     </footer>
+    <script src="../scripts/index.js"></script>
     <script src="../scripts/registration.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
