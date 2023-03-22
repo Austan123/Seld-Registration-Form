@@ -10,7 +10,8 @@
     <title>Seld Registration Form</title>
 </head>
 
-<body>
+<body class="app">
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-md navbar-light">
         <div class="container">
             <a class="navbar-brand" href="../index.html"><img src="../assets/logo-small.png" alt="logo"></a>
@@ -36,7 +37,9 @@
             </div>
         </div>
     </nav>
-
+    <!-- GOOGLE TRANSLATE -->
+    <div class="text-center" id="google_translate_element"></div>
+    <!-- FORM BODY -->
     <div class="d-flex flex-column justify-content-center wrapper">
         <div class="title">
             Registration Form
@@ -211,18 +214,8 @@
             <input type="textarea" required>
         </div>
     </div>
-    </div>
 
-    </div>
-    </div>
-    </div>
-
-    </div>
-
-
-
-
-
+    <!-- FOOTER -->
     <footer class="custom-footer text-white py-3">
         <div class="container">
             <div class="row">
@@ -231,9 +224,17 @@
             </div>
         </div>
     </footer>
+    <!-- WEBSITE SCRIPTS -->
     <script src="../scripts/index.js"></script>
     <script src="../scripts/registration.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en',includedLanguages: 'es,fr', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+        }
+    </script>
 </body>
 
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="../styles.css">
     <title>Seminars</title>
+</head>
+
+<body class="app">
     <nav class="navbar navbar-expand-md navbar-light">
         <div class="container">
             <a class="navbar-brand" href="../index.html"><img src="../assets/logo-small.png" alt="logo"></a>
@@ -32,7 +36,7 @@
             </div>
         </div>
     </nav>
-
+    <div class="text-center" id="google_translate_element"></div>
     <footer class="custom-footer footer text-white py-3">
         <div class="container">
             <div class="row">
@@ -44,8 +48,13 @@
     <script src="../scripts/index.js"></script>
     <script src="../scripts/seminars.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-</head>
-<body>
-    
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'es,fr', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+        }
+    </script>
 </body>
+
 </html>
