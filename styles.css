@@ -67,3 +67,67 @@ a:hover {
 .register-button:hover {
     text-decoration: none;
 }
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.box {
+    float: right;
+    width: 150px;
+    height: 80px;
+    margin-left: 1px;}
+
+
+
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .left-banner {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 100%;
+        background-color: #f0f0f0;
+        box-shadow: 0 2px 4px rgba(0,0,0,.2);
+    }
+
+    .right-banner {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 100%;
+        background-color: #f0f0f0;
+        box-shadow: 0 2px 4px rgba(0,0,0,.2);
+    }
+
+    .content {
+        margin: 0 220px;
+        padding: 20px;
+    }
+
+    h1 {
+        color: #333;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    p {
+        color: #333;
+        line-height: 1.5;
+        text-align: justify;
+    }
+    .banner-text {
+        padding: 20px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        color: #333;
+    }
