@@ -1,48 +1,51 @@
-
 body {
     margin: 0;
     padding: 0;
     background-image: url(./assets/waves-bg.png);
 }
 
-.wrapper{
-width: 50%;
-background-image: url(./assets/waves-bg.png);
-margin: 20px auto;
-padding:0 10px;
-box-shadow: 0px 0px 10px rgba(0,0,0,0.125);
-border-radius: 15px;
+.wrapper {
+    width: 50%;
+    background-image: url(./assets/waves-bg.png);
+    margin: 20px auto;
+    padding: 0 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.125);
+    border-radius: 15px;
 }
 
-.wrapper .title{
+.wrapper .title {
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 25px;
     text-transform: uppercase;
     text-align: center;
     background-image: url(./assets/waves-bg.png);
- 
-}
-.wrapper .form{
-    width: 100%;
-   
+
 }
 
-.wrapper .form .input_field{
+.wrapper .form {
+    width: 100%;
+
+}
+
+.wrapper .form .input_field {
     margin-bottom: 15px;
     display: flex;
     align-items: center;
-   
+
 }
-.wrapper .form .input_field label{
-width: 100%;
+
+.wrapper .form .input_field label {
+    width: 100%;
 
 
 }
-.text-center{
-    color:rgb(67, 131, 144);
+
+.text-center {
+    color: rgb(67, 131, 144);
     font-family: "Poppins";
 }
+
 .conf-header {
     font-family: "Poppins";
     font-size: 85px;
@@ -59,12 +62,14 @@ width: 100%;
         opacity: 1;
     }
 }
-.navbar{
- margin: 20px auto;
-padding:0 10px;
-box-shadow: 0px 0px 5px rgb(67, 131, 144);
-border-radius: 5px;
+
+.navbar {
+    margin: 20px auto;
+    padding: 0 10px;
+    box-shadow: 0px 0px 5px rgb(67, 131, 144);
+    border-radius: 5px;
 }
+
 .custom-nav {
     background-color: rgb(67, 131, 144);
 
@@ -72,6 +77,7 @@ border-radius: 5px;
 
 .custom-footer {
     background-color: rgb(67, 131, 144);
+    width: 100%;
 }
 
 a:hover {
@@ -98,7 +104,9 @@ a:hover {
     float: right;
     width: 150px;
     height: 80px;
-    margin-left: 1px;}
+    margin-left: 1px;
+}
 
-
-
+.app-container{
+min-height: calc(100vh - 56px);
+}
