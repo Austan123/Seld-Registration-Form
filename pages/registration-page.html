@@ -46,14 +46,14 @@
     </div>
     <!-- FORM BODY -->
 
-    <form class="d-flex flex-column justify-content-center wrapper" id="grab-Form" method="post" action="">
+    <form class="d-flex flex-column justify-content-center wrapper" id="grab-Form" method="POST" name="submit-to-google-sheet">
         <div class="title">
             Registration Form
         </div>
 
         <div class="input_field">
             <label> First Name:</label>
-            <input type="text" class="input w-100" name="first-name">
+            <input type="text" class="input w-100" name="first_name">
         </div>
 
         <div class="input_field">
@@ -63,7 +63,7 @@
 
         <div class="input_field">
             <label> Email Address:</label>
-            <input type="text" class="input w-100" name="email-address">
+            <input type="text" class="input w-100" name="email_address">
         </div>
 
         <div class="input_field">
@@ -147,13 +147,13 @@
         <fieldset class="input_field  not-virtual">
             <p>What is the name of your roommate?</p>
             <label> First & Last Name: </label>
-            <input type="text" name="fullname-roommate" id="roommate" placeholder="">
+            <input type="text" name="fullname_roommate" id="roommate" placeholder="">
         </fieldset>
 
         <fieldset class="input_field  not-virtual">
             <p>What is the email address of your roommate?</p>
             <label> Email Address: </label>
-            <input type="text" name="email-roommate" id="roommate" placeholder="Email">
+            <input type="text" name="email_roommate" id="roommate" placeholder="Email">
         </fieldset>
 
         <fieldset class="input_field not-virtual">
@@ -166,16 +166,16 @@
         <fieldset class="input_field not-virtual">
             <label>Are you planning to arrive to the hotel EARLIER than July 24, 2023?</label>
             <label>Yes</label>
-            <input type="radio" name="early-arrival">
+            <input type="radio" name="early_arrival">
             <label>No</label>
-            <input type="radio" name="early-arrival">
+            <input type="radio" name="early_arrival">
         </fieldset>
         <fieldset class="input_field not-virtual">
             <label>Are you planning to leave the hotel LATER than July 27, 2023?</label>
             <label>Yes</label>
-            <input type="radio" name="late-arrival">
+            <input type="radio" name="late_arrival">
             <label>No</label>
-            <input type="radio" name="late-arrival">
+            <input type="radio" name="late_arrival">
         </fieldset>
         <fieldset class="input_field not-virtual">
             <label>Arrival Date: </label>
@@ -185,32 +185,32 @@
         </fieldset>
         <fieldset class="input_field not-virtual">
             <label>Arrival Time</label>
-            <input type="time" name="arrival-time">
+            <input type="time" name="arrival_time">
         </fieldset>
         <fieldset class="input_field not-virtual">
             <label>Airline and Arrival Flight Number</label>
-            <input type="textarea" name="arrival-flight-number">
+            <input type="textarea" name="arrival_flight_number">
         </fieldset>
         <fieldset class="input_field not-virtual">
             <label>Flying From</label>
-            <input type="textarea" name="flying-from">
+            <input type="textarea" name="flyingfrom">
         </fieldset>
         <fieldset class="input_field not-virtual">
             <label>Departure Time</label>
-            <input type="time" name="departure-time">
+            <input type="time" name="departure_time">
         </fieldset>
         <fieldset class="input_field not-virtual">
             <label>Airline and departure flight number</label>
-            <input type="textarea" name="departure-flight-number">
+            <input type="textarea" name="departure_flight_number">
         </fieldset>
         <fieldset class="input_field not-virtual">
             <label>Flying to</label>
-            <input type="textarea" name="flying-to">
+            <input type="textarea" name="flyingto">
         </fieldset>
         <div class="d-flex justify-content-center pb-2">
-            <button class="btn btn-dark mx-auto" type="submit"> Register Now </button>
+            <button class="btn btn-dark mx-auto" type="submit" name="formButton"> Register Now </button>
         </div>
-
+        <span id="msg"></span>
     </form>
     </main>
     <!-- FOOTER -->
