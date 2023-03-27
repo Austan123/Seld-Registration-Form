@@ -42,11 +42,17 @@ const scriptURL = "https://script.google.com/macros/s/AKfycbyW2_2diylogBRguVJX5Q
 const form_reg = document.forms["submit-to-google-sheet"];
 form.addEventListener('submit', e => {
     e.preventDefault();
-    fetch(scriptURL, {method: "POST", body: new FormData(form_reg)})
+    fetch(scriptURL, { method: "POST", body: new FormData(form_reg) })
         .then(response => {
+            msg.classList.toggle("alert")
+            msg.classList.toggle("alert-success")
+            msg.classList.toggle("text-center")
             msg.innerHTML = "Thank you for your submission!"
-            setTimeout(function() {
+            setTimeout(function () {
                 msg.innerHTML = ""
+                msg.classList.toggle("alert")
+                msg.classList.toggle("alert-success")
+                msg.classList.toggle("text-center")
             }, 5000)
             form.reset();
         })
