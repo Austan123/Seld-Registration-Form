@@ -55,7 +55,10 @@ form.addEventListener('submit', e => {
                 msg.classList.toggle("text-center")
             }, 5000)
             form.reset();
-            button.onclick = document.location.href = "../index.html";
+            setTimeout(function() {
+                button.onclick = document.location.href = "../index.html"
+            },2000)
+            
         })
         .catch(error => console.error("Error!", error.message))
 })
