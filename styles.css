@@ -111,7 +111,7 @@ a:hover {
 min-height: calc(100vh - 56px);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 940px) {
     .wrapper {
         width: 90% !important;
     }
@@ -137,4 +137,9 @@ min-height: calc(100vh - 56px);
         font-size: 40px;
     }
 
-  }
+    #navbarNav {
+        text-align: center;
+    }
+
+
+}

@@ -36,7 +36,7 @@ form.addEventListener("submit", (e) => {
     console.log(data);
 })
 
-
+const button = document.getElementById("form_button");
 const msg = document.getElementById("msg")
 const scriptURL = "https://script.google.com/macros/s/AKfycbyW2_2diylogBRguVJX5QDAbYMDmA45C9gqL3IjTInAxXg_wEVWSZlODpcvG5wJIJQm/exec";
 const form_reg = document.forms["submit-to-google-sheet"];
@@ -55,6 +55,7 @@ form.addEventListener('submit', e => {
                 msg.classList.toggle("text-center")
             }, 5000)
             form.reset();
+            button.onclick = document.location.href = "../index.html";
         })
         .catch(error => console.error("Error!", error.message))
 })
