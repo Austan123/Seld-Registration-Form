@@ -128,4 +128,8 @@ min-height: calc(100vh - 56px);
     input[type="radio"] {
         display: inline-block;
     }
+
+    #form_button {
+        margin-top: 25px;
+    }
   }
