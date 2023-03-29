@@ -110,3 +110,22 @@ a:hover {
 .app-container{
 min-height: calc(100vh - 56px);
 }
+
+@media only screen and (max-width: 600px) {
+    .wrapper {
+        width: 90% !important;
+    }
+
+    #catagory {
+        width: 100%;
+        display: block;
+    }
+
+    input {
+        display: block;
+    }
+
+    input[type="radio"] {
+        display: inline-block;
+    }
+  }
