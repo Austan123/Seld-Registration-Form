@@ -132,4 +132,9 @@ min-height: calc(100vh - 56px);
     #form_button {
         margin-top: 25px;
     }
+
+    .conf-header {
+        font-size: 40px;
+    }
+
   }
