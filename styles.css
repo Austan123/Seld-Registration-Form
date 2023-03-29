@@ -111,6 +111,19 @@ a:hover {
 min-height: calc(100vh - 56px);
 }
 
+#catagory {
+    width: 35%;
+    display: block;
+}
+
+input {
+    display: block;
+}
+
+input[type="radio"] {
+    display: inline-block;
+}
+
 @media only screen and (max-width: 940px) {
     .wrapper {
         width: 90% !important;
