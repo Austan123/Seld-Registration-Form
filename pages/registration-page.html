@@ -13,220 +13,266 @@
 
 <body class="app">
     <main class="app-container">
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-md navbar-light">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html"><img src="../assets/logo-small.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./registration-page.html">Registration</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./brochures.html">Brochure</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./seminars.html">Seminars</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- GOOGLE TRANSLATE -->
         <div class="container">
-            <a class="navbar-brand" href="../index.html"><img src="../assets/logo-small.png" alt="logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./registration-page.html">Registration</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./brochures.html">Brochure</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./seminars.html">Seminars</a>
-                    </li>
-                </ul>
+            <div class="box mb-2" id="google_translate_element"></div>
+        </div>
+        <!-- FORM BODY -->
+
+        <form class="d-flex flex-column justify-content-center wrapper" id="grab-Form" method="POST"
+            name="submit-to-google-sheet">
+            <div class="title">
+                Registration Form
             </div>
-        </div>
-    </nav>
 
+            <div class="input_field">
+                <label> First Name:</label>
+                <input type="text" class="input w-100" name="first_name">
+            </div>
 
-    <!-- GOOGLE TRANSLATE -->
-    <div class="container">
-        <div class="box mb-2" id="google_translate_element"></div>
-    </div>
-    <!-- FORM BODY -->
+            <div class="input_field">
+                <label> Surname: </label>
+                <input type="text" class="input w-100" name="surname">
+            </div>
 
-    <form class="d-flex flex-column justify-content-center wrapper" id="grab-Form" method="POST" name="submit-to-google-sheet">
-        <div class="title">
-            Registration Form
-        </div>
+            <div class="input_field">
+                <label> Email Address:</label>
+                <input type="text" class="input w-100" name="email_address">
+            </div>
 
-        <div class="input_field">
-            <label> First Name:</label>
-            <input type="text" class="input w-100" name="first_name">
-        </div>
-
-        <div class="input_field">
-            <label> Surname: </label>
-            <input type="text" class="input w-100" name="surname">
-        </div>
-
-        <div class="input_field">
-            <label> Email Address:</label>
-            <input type="text" class="input w-100" name="email_address">
-        </div>
-
-        <div class="input_field">
-            <label> Phone Number:</label>
-            <input type="tel" class="input w-100" name="phone">
-        </div>
-
-        <fieldset class="input_field">
-            <label> Gender:</label>
-            <div class="custom_select">
-                <select name="gender">
+            <div class="input_field">
+                <label> Phone Number:</label>
+                <input type="tel" class="input w-100" name="phone">
+            </div>
+<br>
+            <fieldset class="input_field">
+                <label> Gender:</label>
+                <div class="custom_select">
+                    <select name="gender">
+                        <option value="">Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+            </fieldset>
+            <br>
+            <fieldset class="custom_select">
+                <p>Select Your Leader Catagory</p>
+                <label>Catagory: </label>
+                <select name="catagory" id="catagory">
                     <option value="">Select</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
+                    <option value="President">President</option>
+                    <option value="Secretary & HR Directors">Secretary</option>
+                    <option value="Tresurers">Tresurer</option>
+                    <option value="Departmental Directors">Departmental Director</option>
+                    <option value="Administrator & Employee in Institution">Administrator & Employee in Institution
+                    </option>
+                    <option value="Church Pastor">Church Pastor</option>
+                    <option value="Church Elder">Church Elder</option>
                 </select>
+            </fieldset>
+            <br>
+            <fieldset class="custom_select">
+                <p>Select your Union</p>
+                <label> </label>
+                <select name="union" id="selection">
+                    <option value="">Select</option>
+                    <option value="Atlantic Caribbean">Atlantic Caribbean </option>
+                    <option value="Belize ">Belize</option>
+                    <option value="Jamaica">Jamaica</option>
+                    <option value="Dutch Caribbean">Dutch Caribbean </option>
+                    </option>
+                </select>
+            </fieldset>
+
+            <br>
+            <fieldset class="input_field">
+                <p>How will you participate?</p>
+                <label> Virtually</label>
+                <input type="radio" name="attendance" id="attendance-virtually" value="virtually">
+
+                <label>In Person</label>
+                <input type="radio" name="attendance" id="attendance-person" value="in person">
+            </fieldset>
+            <br>
+            <fieldset class="input_field not-virtual">
+                <p>Are you a U.S. citizen or permanent resident?</p>
+                <label> Yes </label>
+                <input type="radio" name="status" id="status-yes" value="Yes">
+
+                <label>No </label>
+                <input type="radio" name="status" id="status-no" value="No">
+            </fieldset>
+            <br>
+            <fieldset class="input_field  not-virtual">
+                <p>Do you have a VISA to travel to the USA?</p>
+                <p>(If no, you should immediately make the request to the division for a letter to the US embassy in
+                    your
+                    country)</p>
+                <label> Yes </label>
+                <input type="radio" name="travel" id="travel" value="Yes">
+                <label>No </label>
+                <input type="radio" name="travel" id="travel" value="No">
+            </fieldset>
+            <br>
+            <fieldset class="input_field  not-virtual">
+                <p>Have you received your COVID Vaccination?</p>
+                <p> (The US government requires all non-US Citizens and non-residents to be vaccinated for COVID for
+                    entry
+                    into
+                    the USA.)</p>
+                <label> Yes </label>
+                <input type="radio" name="vaccinated" id="vaccinated" value="Yes">
+                <label>No </label>
+                <input type="radio" name="vaccinated" id="vaccinated" value="No">
+            </fieldset>
+            <br>
+            <fieldset class="input_field  not-virtual">
+                <label>Will you need hotel accommodation?</label> <br />
+                <label> Yes </label>
+                <input type="radio" name="accommodation" id="accommodation" value="Yes">
+                <label>No </label>
+                <input type="radio" name="accommodation" id="accommodation" value="No">
+            </fieldset>
+            <br>
+            <fieldset class="input_field  not-virtual">
+                <p>What is the name of your roommate?</p>
+                <label> First & Last Name: </label>
+                <input type="text" name="fullname_roommate" id="roommate" placeholder="">
+            </fieldset>
+            <br>
+            <fieldset class="input_field  not-virtual">
+                <p>What is the email address of your roommate?</p>
+                <label> Email Address: </label>
+                <input type="text" name="email_roommate" id="roommate" placeholder="Email">
+            </fieldset>
+            <br>
+            <fieldset class="input_field not-virtual">
+                <label for="Current location">Country Where You Live?</label>
+                <textarea class="textarea w-100 px-2" name="country"></textarea>
+            </fieldset>
+
+            <hr style="background-color: black;">
+            <div class="title not-virtual">Travel Information</div>
+            <br>
+            <fieldset class="input_field not-virtual">
+                <label>Arrival Date: </label>
+                <input type="date" name="arrival" id="date" min="2023-07-24" max="2023-07-28">
+                <label>Departure Date: </label>
+                <input type="date" name="departure" id="date" min="2023-07-24" max="2023-07-28">
+            </fieldset>
+            <br>
+            <fieldset class="input_field not-virtual">
+                <label>Arrival Time:</label>
+                <input type="time" name="arrival_time">
+            </fieldset>
+            <br>
+            <fieldset class="input_field not-virtual">
+                <label>Airline and Arrival Flight Number:</label>
+                <input type="textarea" name="arrival_flight_number">
+            </fieldset>
+            <br>
+            <fieldset class="input_field not-virtual">
+                <label>Flying From:</label>
+                <input type="textarea" name="flyingfrom">
+            </fieldset>
+            <br>
+            <fieldset class="input_field not-virtual">
+                <label>Departure Time:</label>
+                <input type="time" name="departure_time">
+            </fieldset>
+            <br>
+            <fieldset class="input_field not-virtual">
+                <label>Airline and departure flight number:</label>
+                <input type="textarea" name="departure_flight_number">
+            </fieldset>
+            <br>
+            <fieldset class="input_field not-virtual">
+                <label>Flying to:</label>
+                <input type="textarea" name="flyingto">
+            </fieldset>
+            <br>
+            <div class="title not-virtual">Financial Information</div>
+            <div>
+                <p>
+                    <label>
+                        <h5>Registration fee: </h5>
+                    </label>
+                <p>This fee is mandatory for all participants:
+                    In person participants - $115
+                    <br>
+                    Virtual participants - $25 </p>
+
+
+
+                <label>
+                    <h5> Hotel:</h5>
+                </label>
+
+                <p>Single occupancy - $107 per night per person = $321 for three nights
+
+                </p>
+                <p>Double occupancy - $53.50 per night per person = $160.50 for three nights.</p>
+
+
+
+                <label>
+                    <h5> Food is mandatory: </h5>
+                </label>
+
+                <P> Dinner on the 24th; breakfast and lunch from 25-26; breakfast on the 27th a total of
+
+                    $310 per person</P>
+
+                <label>
+                    <h5> Attending in person but not staying at the hotel:
+                    </h5>
+                </label>
+
+
+                <p> Lunch and use of facility July 25 and 26, $72 per day = $144
+
+                    Registration fee - $115 <br>
+
+                    Total = $259</p>
+                <h5> All funds are to be paid through the union treasury to the Division treasury.</h5>
             </div>
-        </fieldset>
 
-        <fieldset class="custom_select">
-            <p>Select Your Leader Catagory</p>
-            <label>Catagory: </label>
-            <select name="catagory" id="catagory">
-                <option value="">Select</option>
-                <option value="President">President</option>
-                <option value="Secretary & HR Directors">Secretary</option>
-                <option value="Tresurers">Tresurer</option>
-                <option value="Departmental Directors">Departmental Director</option>
-                <option value="Administrator & Employee in Institution">Administrator & Employee in Institution</option>
-                <option value="Church Pastor">Church Pastor</option>
-                <option value="Church Elder">Church Elder</option>
-            </select>
-        </fieldset>
+            <br>
 
-        <fieldset class="custom_select">
-        <p>Select your Union</p>
-        <label> </label>
-        <select name="union" id="selection">
-            <option value="">Select</option>
-            <option value="Atlantic Caribbean Union Mission">Atlantic Caribbean Union </option>
-            <option value="Atlantic Caribbean Union Mission">Atlantic Caribbean Union </option>
-            <option value="Atlantic Caribbean Union Mission">Atlantic Caribbean Union </option>
-            <option value="Atlantic Caribbean Union Mission">Atlantic Caribbean Union </option>
-            </option>
-        </select>
-    </fieldset>
-
-
-        <fieldset class="input_field">
-            <p>How will you participate?</p>
-            <label> Virtually</label>
-            <input type="radio" name="attendance" id="attendance-virtually" value="virtually">
-
-            <label>In Person</label>
-            <input type="radio" name="attendance" id="attendance-person" value="in person">
-        </fieldset>
-
-        <fieldset class="input_field not-virtual">
-            <p>Are you a U.S. citizen or permanent resident?</p>
-            <label> Yes </label>
-            <input type="radio" name="status" id="status-yes" value="Yes">
-
-            <label>No </label>
-            <input type="radio" name="status" id="status-no" value="No">
-        </fieldset>
-
-        <fieldset class="input_field  not-virtual">
-            <p>Do you have a VISA to travel to the USA?</p>
-            <p>(If no, you should immediately make the request to the division for a letter to the US embassy in your
-                country)</p>
-            <label> Yes </label>
-            <input type="radio" name="travel" id="travel" value="Yes">
-            <label>No </label>
-            <input type="radio" name="travel" id="travel" value="No">
-        </fieldset>
-
-        <fieldset class="input_field  not-virtual">
-            <p>Have you received your COVID Vaccination?</p>
-            <p> (The US government requires all non-US Citizens and non-residents to be vaccinated for COVID for entry
-                into
-                the USA.)</p>
-            <label> Yes </label>
-            <input type="radio" name="vaccinated" id="vaccinated" value="Yes">
-            <label>No </label>
-            <input type="radio" name="vaccinated" id="vaccinated" value="No">
-        </fieldset>
-
-        <fieldset class="input_field  not-virtual">
-            <label>Will you need hotel accommodation?</label> <br/>
-            <label> Yes </label>
-            <input type="radio" name="accommodation" id="accommodation" value="Yes">
-            <label>No </label>
-            <input type="radio" name="accommodation" id="accommodation" value="No">
-        </fieldset>
-
-        <fieldset class="input_field  not-virtual">
-            <p>What is the name of your roommate?</p>
-            <label> First & Last Name: </label>
-            <input type="text" name="fullname_roommate" id="roommate" placeholder="">
-        </fieldset>
-
-        <fieldset class="input_field  not-virtual">
-            <p>What is the email address of your roommate?</p>
-            <label> Email Address: </label>
-            <input type="text" name="email_roommate" id="roommate" placeholder="Email">
-        </fieldset>
-
-        <fieldset class="input_field not-virtual">
-            <label for="Current location">Country Where You Live?</label>
-            <textarea class="textarea w-100 px-2" name="country"></textarea>
-        </fieldset>
-
-        <hr style="background-color: black;">
-        <div class="title not-virtual">Travel Information</div>
-        <fieldset class="input_field not-virtual">
-            <label>Are you planning to arrive to the hotel EARLIER than July 24, 2023?</label>
-            <label>Yes</label>
-            <input type="radio" name="early_arrival" value="Yes">
-            <label>No</label>
-            <input type="radio" name="early_arrival" value="No">
-        </fieldset>
-        <fieldset class="input_field not-virtual">
-            <label>Are you planning to leave the hotel LATER than July 27, 2023?</label>
-            <label>Yes</label>
-            <input type="radio" name="late_arrival" value="Yes">
-            <label>No</label>
-            <input type="radio" name="late_arrival" value="No">
-        </fieldset>
-        <fieldset class="input_field not-virtual">
-            <label>Arrival Date: </label>
-            <input type="date" name="arrival" id="date" min="2023-07-24" max="2023-07-28">
-            <label>Departure Date: </label>
-            <input type="date" name="departure" id="date" min="2023-07-24" max="2023-07-28">
-        </fieldset>
-        <fieldset class="input_field not-virtual">
-            <label>Arrival Time</label>
-            <input type="time" name="arrival_time">
-        </fieldset>
-        <fieldset class="input_field not-virtual">
-            <label>Airline and Arrival Flight Number</label>
-            <input type="textarea" name="arrival_flight_number">
-        </fieldset>
-        <fieldset class="input_field not-virtual">
-            <label>Flying From</label>
-            <input type="textarea" name="flyingfrom">
-        </fieldset>
-        <fieldset class="input_field not-virtual">
-            <label>Departure Time</label>
-            <input type="time" name="departure_time">
-        </fieldset>
-        <fieldset class="input_field not-virtual">
-            <label>Airline and departure flight number</label>
-            <input type="textarea" name="departure_flight_number">
-        </fieldset>
-        <fieldset class="input_field not-virtual">
-            <label>Flying to</label>
-            <input type="textarea" name="flyingto">
-        </fieldset>
-        <div class="d-flex justify-content-center pb-2">
-            <button id="form_button" class="btn btn-dark mx-auto" type="submit" name="formButton"> Submit </button>
-        </div>
-        <span role="alert" id="msg"></span>
-    </form>
+            <div class="d-flex justify-content-center pb-2">
+                <button id="form_button" class="btn btn-dark mx-auto" type="submit" name="formButton"> Submit </button>
+            </div>
+            <span role="alert" id="msg"></span>
+        </form>
     </main>
     <!-- FOOTER -->
     <footer class="custom-footer text-white py-3">

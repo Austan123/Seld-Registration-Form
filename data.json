@@ -1,6 +1,6 @@
 {"unions":{
-    "en": ["Atlantic Caribbean Union", "Belize Union"],
-    "es": ["Atlantic Caribbean Union1", "Belize Union1"],
-    "fr": ["Atlantic Caribbean Union2", "Belize Union2"]
+    "en": ["Atlantic Caribbean", "Belize", "Jamaica", "Dutch Caribbean " ],
+    "es": ["Central Mexican", "Chiapas", "Cuban Union", "Dominican Union", "El Salvador Union", "East Venezuela Union", "Guatemala Union", "Honduras Union", "Interoceanic Mexican Union", "North Colombia Union", "North Mexican Union", "Panama Union", "Puerto Rican Union", "South Central American Union", "South Colombian Union", "South Mexican Union", "West Venezuelan Union"],
+    "fr": ["French Antilles Guiana", "Haitian Union"]
     
 }}
