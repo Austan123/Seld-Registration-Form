@@ -80,7 +80,7 @@
 
         })
 
-        unionElement.replaceChildren(defaultOption,...optionElements)
+        unionElement.replaceChildren(defaultOption, ...optionElements)
 
 
         console.log(("lang", lang, options));
@@ -94,10 +94,6 @@
         attributeOldValue: false,
         subtree: false,
     });
-
-
-
-
 })()
 
 
