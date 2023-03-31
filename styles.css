@@ -54,6 +54,10 @@ body {
     animation: fadeIn 5s;
 }
 
+.empty-box {
+    height: 5rem;
+}
+
 /* fade in animation */
 @keyframes fadeIn {
     0% {
