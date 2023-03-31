@@ -124,6 +124,10 @@ input[type="radio"] {
     display: inline-block;
 }
 
+nav, li{
+    font-size: 24px;
+}
+
 @media only screen and (max-width: 940px) {
     .wrapper {
         width: 90% !important;
