@@ -4,6 +4,11 @@ body {
     background-image: url(./assets/waves-bg.png);
 }
 
+.brochure_image {
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
 .wrapper {
     width: 50%;
     background-image: url(./assets/waves-bg.png);
