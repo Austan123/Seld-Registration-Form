@@ -1,6 +1,6 @@
 {"unions":{
-    "en": ["Atlantic Caribbean", "Belize", "Jamaica", "Dutch Caribbean " ],
-    "es": ["Central Mexican", "Chiapas", "Cuban Union", "Dominican Union", "El Salvador Union", "East Venezuela Union", "Guatemala Union", "Honduras Union", "Interoceanic Mexican Union", "North Colombia Union", "North Mexican Union", "Panama Union", "Puerto Rican Union", "South Central American Union", "South Colombian Union", "South Mexican Union", "West Venezuelan Union"],
+    "en": ["Atlantic Caribbean", "Belize", "Jamaica", "Dutch Caribbean", "Caribbean", "IADPA", "IATS", "Inter-American Division", "Montemorelos University" ],
+    "es": ["Central Union of Mexico", "Mexican Union of Chiapas", "Cuban Union", "Dominican Union", "Salvadoran Union", "Eastern Venezuelan Union", "Guatemalan Union", "Honduran Union", "Interoceanic Union of Mexico", "North Colombian Union", "North Mexican Union", "Panama Union", "Puerto Rican Union", "South Central American Union", "South Colombian Union", "Southeast Mexican Union", "West Venezuelan Union", "Panamanian Union", "GEMA Editores", "IADPA", "SETAI", "Montemorelos University", "Inter-American Division"],
     "fr": ["French Antilles Guiana", "Haitian Union"]
     
 }}
