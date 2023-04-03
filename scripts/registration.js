@@ -69,6 +69,10 @@
         const lang = mutation.target.getAttribute("lang")
         const options = data.unions[lang]
         const defaultOption = unionElement.children[0]
+        const para = document.getElementById("union-para");
+        if(lang == "fr"){
+            para.innerText = "Selectionnez votre Union"
+        }
 
 
         const optionElements = options.map((option) => {
