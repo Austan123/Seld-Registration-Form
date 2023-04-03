@@ -72,6 +72,9 @@
         const para = document.getElementById("union-para");
         if(lang == "fr"){
             para.innerText = "Selectionnez votre Union"
+        }else {
+            data.unions["en"]
+            para.innerText = "Select your Union"
         }
 
 
