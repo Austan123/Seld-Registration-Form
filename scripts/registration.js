@@ -10,8 +10,9 @@
                 element.style.display = "none"
                 element.removeAttribute("required")
             } else {
-                element.style.display = "block"
-                element.setAttribute("required", true)
+                element.style.display = "inline-block"
+                element.setAttribute("required", "")
+                element.required = true;
             }
 
         });
