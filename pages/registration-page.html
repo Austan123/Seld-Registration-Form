@@ -60,17 +60,17 @@
                 <input type="text" class="input w-100" name="surname" required>
             </div>
 
-            <div class="input_field">
+            <div class="input_field" >
                 <label> Email Address:</label>
                 <input type="text" class="input w-100" name="email_address" required>
             </div>
 
-            <div class="input_field">
+            <div class="input_field" >
                 <label> Phone Number:</label>
                 <input type="tel" class="input w-100" name="phone" required>
             </div>
             <br>
-            <fieldset class="input_field">
+            <fieldset class="input_field" required>
                 <label> Gender:</label>
                 <div class="custom_select">
                     <select name="gender" required>
@@ -81,7 +81,7 @@
                 </div>
             </fieldset>
             <br>
-            <fieldset class="custom_select">
+            <fieldset class="custom_select" >
                 <p>Select Your Leader Catagory</p>
                 <label>Catagory: </label>
                 <select name="catagory" id="catagory" required>
@@ -97,7 +97,7 @@
                 </select>
             </fieldset>
             <br>
-            <fieldset class="custom_select">
+            <fieldset class="custom_select" required>
                 <p id="union-para">Select your Union</p>
                 <select name="union" id="selection" required>
                     <option value="">Select</option>
@@ -136,10 +136,10 @@
             <fieldset class="input_field not-virtual">
                 <p>Are you a U.S. citizen or permanent resident?</p>
                 <label> Yes </label>
-                <input type="radio" name="status" id="status-yes" value="Yes">
+                <input type="radio" name="status" id="status-yes" value="Yes" required>
 
                 <label>No </label>
-                <input type="radio" name="status" id="status-no" value="No">
+                <input type="radio" name="status" id="status-no" value="No" required>
             </fieldset>
             <br>
             <fieldset class="input_field  not-virtual">
@@ -148,41 +148,42 @@
                     your
                     country)</p>
                 <label> Yes </label>
-                <input type="radio" name="travel" id="travel" value="Yes">
+                <input type="radio" name="travel" id="travel" value="Yes" required>
                 <label>No </label>
-                <input type="radio" name="travel" id="travel" value="No">
+                <input type="radio" name="travel" id="travel" value="No" required>
             </fieldset>
 
             <br>
 
-            <fieldset class="input_field  not-virtual">
+            <fieldset class="input_field  not-virtual" required>
                 <p>Have you received your COVID Vaccination?</p>
                 <p> (The US government requires all non-US Citizens and non-residents to be vaccinated for COVID for
                     entry
                     into
                     the USA.)</p>
                 <label> Yes </label>
-                <input type="radio" name="vaccinated" id="vaccinated" value="Yes">
+                <input type="radio" name="vaccinated" id="vaccinated" value="Yes" >
                 <label>No </label>
-                <input type="radio" name="vaccinated" id="vaccinated" value="No">
+                <input type="radio" name="vaccinated" id="vaccinated" value="No" >
             </fieldset>
             <br>
 
-            <fieldset class="input_field  not-virtual">
+            <fieldset class="input_field  not-virtual" required>
                 <label>Will you need hotel accommodation?</label> <br />
                 <label> Yes </label>
-                <input type="radio" name="accommodation" id="accommodation" value="Yes">
+                <input type="radio" name="accommodation" id="accommodation" value="Yes" >
                 <label>No </label>
-                <input type="radio" name="accommodation" id="accommodation" value="No">
+                <input type="radio" name="accommodation" id="accommodation" value="No" >
             </fieldset>
 
-            <fieldset class="input_field  not-virtual"> <br />
+            <fieldset class="input_field  not-virtual" required> 
+                <br />
                 <p id="">What type of accommodation?</p>
-                <select name="accommodation" id="selection" required>
+                <select name="accommodation" id="selection" >
                     <option> Select </option>
-                    <option> Single Room </option>
-                    <option> Double Room With One Bed </option>
-                    <option> Double Room With Two Bed </option>
+                    <option> Single Room </option >
+                    <option> Double Room With One Bed </option >
+                    <option> Double Room With Two Bed </option >
                 </select>
             </fieldset>
             <br>
@@ -190,9 +191,9 @@
             <fieldset class="input_field  not-virtual">
                 <label>Is your roommate participating in the conference?</label> <br />
                 <label> Yes </label>
-                <input type="radio" name="participating" id="participating" value="Yes">
+                <input type="radio" name="participating" id="participating" value="Yes" required>
                 <label>No </label>
-                <input type="radio" name="participating" id="participating" value="No">
+                <input type="radio" name="participating" id="participating" value="No" required>
                 <p> (If yes, he/she must register separately)</p>
             </fieldset>
 
@@ -212,8 +213,8 @@
             </fieldset>
             <br>
 
-            <fieldset class="input_field not-virtual">
-                <label>Country Where You Live?</label>
+            <fieldset class="input_field not-virtual" required>
+                <label for="Current location">Country Where You Live?</label>
                 <textarea class="textarea w-100 px-2" name="country"></textarea>
             </fieldset>
             <br>
