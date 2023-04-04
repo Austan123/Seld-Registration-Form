@@ -99,14 +99,12 @@
             <br>
             <fieldset class="custom_select">
                 <p id="union-para">Select your Union</p>
-                <label> </label>
                 <select name="union" id="selection" required>
                     <option value="">Select</option>
-                    <option value="Atlantic Caribbean">Atlantic Caribbean </option>
-                    <option value="Belize ">Belize</option>
-                    <option value="Jamaica">Jamaica</option>
-                    <option value="Dutch Caribbean">Dutch Caribbean </option>
-                    <option value="Caribbean">Caribbean</option>
+                    <option value="Atlantic Caribbean">Atlantic Caribbean Union </option>
+                    <option value="Belize ">Belize Union</option>
+                    <option value="Jamaica">Jamaica Union</option>
+                    <option value="Dutch Caribbean">Dutch Caribbean Union</option>
                     <option value="IADPA">IADPA</option>
                     <option value="IATS">IATS</option>
                     <option value="Inter-American Division">Inter-American Division</option>
@@ -126,12 +124,12 @@
             </fieldset>
             <br>
             <fieldset class="input_field">
-                <p>My Payment Method</p>
+                <p>Select your payment Method.</p>
                 <input type="radio" name="payment" value="I am a delegate of my organization/institution and they are covering my expenses" required>
-                <label>I am a delegate of my organization/institution and they are covering my expenses</label>
+                <label>I am a delegate of my organization/institution and they are covering my expenses.</label>
                 <br>
                 <input type="radio" name="payment" value="I will pay my own expenses through my union" required>
-                <label>I will pay my own expenses through my union</label>
+                <label>I will pay my own expenses through my union.</label>
             </fieldset>
             <br>
             <fieldset class="input_field not-virtual">
@@ -166,6 +164,7 @@
                 <input type="radio" name="vaccinated" id="vaccinated" value="No">
             </fieldset>
             <br>
+
             <fieldset class="input_field  not-virtual">
                 <label>Will you need hotel accommodation?</label> <br />
                 <label> Yes </label>
@@ -173,6 +172,28 @@
                 <label>No </label>
                 <input type="radio" name="accommodation" id="accommodation" value="No">
             </fieldset>
+
+            <fieldset class="input_field  not-virtual"> <br />
+                <p id="">What type of accommodation?</p>
+                <select name="accommodation" id="selection" required>
+                    <option> Select </option>
+                    <option> Single Room </option>
+                    <option> Double Room With One Bed </option>
+                    <option> Double Room With Two Bed </option>
+                </select>
+            </fieldset>
+<br>
+
+<fieldset class="input_field  not-virtual">
+    <label>Is your roommate participating in the conference?</label> <br />
+    <label> Yes </label>
+    <input type="radio" name="participating" id="participating" value="Yes">
+    <label>No </label>
+    <input type="radio" name="participating" id="participating" value="No">
+    <p> (If yes, he/she must register separately)</p>
+</fieldset>
+
+
             <br>
             <fieldset class="input_field  not-virtual">
                 <p>What is the name of your roommate?</p>
@@ -190,6 +211,10 @@
                 <label for="Current location">Country Where You Live?</label>
                 <textarea class="textarea w-100 px-2" name="country"></textarea>
             </fieldset>
+            <br>
+<h5> NOTE: </h5>
+            <p> If you are planning to arrive at the hotel earlier than July 24 and leave later than July 27, you
+                will need to make your reservation directly with the hotel for those extra days.</p>
 
             <hr style="background-color: black;">
             <div class="title not-virtual">Travel Information</div>
