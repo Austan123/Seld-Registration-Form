@@ -179,11 +179,11 @@
             <fieldset class="input_field  not-virtual" required> 
                 <br />
                 <p id="">What type of accommodation?</p>
-                <select name="accommodation" id="selection" >
-                    <option> Select </option>
-                    <option> Single Room </option >
-                    <option> Double Room With One Bed </option >
-                    <option> Double Room With Two Bed </option >
+                <select name="type-accomodation" id="type-accomodation" required >
+                    <option value=""> Select </option>
+                    <option value=""> Single Room </option >
+                    <option value=""> Double Room With One Bed </option >
+                    <option value=""> Double Room With Two Bed </option >
                 </select>
             </fieldset>
             <br>
@@ -213,9 +213,9 @@
             </fieldset>
             <br>
 
-            <fieldset class="input_field not-virtual" required>
-                <label for="Current location">Country Where You Live?</label>
-                <textarea class="textarea w-100 px-2" name="country"></textarea>
+            <fieldset class="input_field not-virtual" >
+                <label for="Current location" >Country Where You Live?</label >
+                <textarea class="textarea w-100 px-2" name="country" required></textarea>
             </fieldset>
             <br>
             <fieldset class="input_field  not-virtual">
