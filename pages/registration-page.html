@@ -184,22 +184,22 @@
                 <label> Yes </label>
                 <input class="not-virtual" type="radio" name="accommodation" id="accommodation" value="Yes">
                 <label>No </label>
-                <input class="not-virtual" type="radio" name="accommodation" id="accommodation" value="No">
+                <input class="not-virtual" type="radio" name="accommodation" id="no-accommodation" value="No">
             </fieldset>
 
-            <fieldset class="input_field  not-virtual">
+            <fieldset class="input_field  not-virtual not-accommodation">
                 <br />
-                <p id="">What type of accommodation?</p>
+                <p>What type of accommodation?</p>
                 <select class="not-virtual" name="type-accomodation" id="type-accomodation">
                     <option value=""> Select </option>
-                    <option value=""> Single Room </option>
-                    <option value=""> Double Room With One Bed </option>
-                    <option value=""> Double Room With Two Bed </option>
+                    <option id="single" value="Single Room"> Single Room </option>
+                    <option class="roommate" value="Double Room With One Bed"> Double Room With One Bed </option>
+                    <option class="roommate" value="Double Room With Two Bed"> Double Room With Two Bed </option>
                 </select>
             </fieldset>
             <br>
 
-            <fieldset class="input_field  not-virtual">
+            <fieldset class="input_field  not-virtual not-accommodation not-single">
                 <label>Is your roommate participating in the conference?</label> <br />
                 <label> Yes </label>
                 <input class="not-virtual" type="radio" name="participating" id="participating" value="Yes">
@@ -210,20 +210,20 @@
 
 
             <br>
-            <fieldset class="input_field  not-virtual">
+            <fieldset class="input_field  not-virtual not-accommodation not-single">
                 <p>What is the name of your roommate?</p>
                 <label> First & Last Name: </label>
                 <input class="not-virtual" type="text" name="fullname_roommate" id="roommate" placeholder="">
             </fieldset>
             <br>
 
-            <fieldset class="input_field  not-virtual">
+            <fieldset class="input_field  not-virtual not-accommodation not-single">
                 <p>What is the email address of your roommate?</p>
                 <label> Email Address: </label>
                 <input class="not-virtual" type="text" name="email_roommate" id="roommate" placeholder="Email">
             </fieldset>
             <br>
-            <fieldset class="input_field  not-virtual">
+            <fieldset class="input_field  not-virtual not-accommodation">
                 <h5> NOTE: </h5>
                 <p> If you are planning to arrive at the hotel earlier than July 24 and leave later than July 27, you
                     will need to make your reservation directly with the hotel for those extra days.</p>

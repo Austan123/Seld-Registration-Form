@@ -1,6 +1,9 @@
 (async () => {
     const inPersonNode = document.getElementById("attendance-person")
     const virtualNode = document.getElementById("attendance-virtually")
+    const no_accommodation = document.getElementById("no-accommodation")
+    const accommodation = document.getElementById("accommodation")
+    const select = document.getElementById("type-accomodation")
     const form = document.getElementById("grab-Form")
 
     const togglefields = (hide) => {
@@ -16,6 +19,39 @@
             }
 
         });
+
+        
+    }
+
+    const togglefields_2 = (hide) => {
+        const notAccommodationElements = document.getElementsByClassName("not-accommodation")
+
+        Array.from(notAccommodationElements).forEach(item => {
+            if(hide) {
+                item.style.display = "none"
+                item.removeAttribute("required")
+            } else {
+                item.style.display = "inline-block"
+                item.setAttribute("required", "")
+                item.required = true;
+            }
+        });
+
+    }
+
+    const togglefields_3 = (hide) => {
+        const notSingleElements = document.getElementsByClassName("not-single")
+
+        Array.from(notSingleElements).forEach(item => {
+            if(hide) {
+                item.style.display = "none"
+                item.removeAttribute("required")
+            } else {
+                item.style.display = "inline-block"
+                item.setAttribute("required", "")
+                item.required = true;
+            }
+        });
     }
 
     inPersonNode.addEventListener("click", (e) => {
@@ -24,6 +60,22 @@
 
     virtualNode.addEventListener("click", (e) => {
         togglefields(true)
+    })
+    accommodation.addEventListener("click", (e) => {
+        togglefields_2(false)
+    })
+    no_accommodation.addEventListener("click", (e) => {
+        togglefields_2(true)
+    })
+    select.addEventListener("click", function() {
+        select.addEventListener("change", (e) => {
+            if(select.value == "Single Room"){
+                togglefields_3(true)
+            }else{
+                togglefields_3(false)
+            }
+        })
+
     })
     form.addEventListener("submit", (e) => {
         e.preventDefault()
