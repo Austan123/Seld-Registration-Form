@@ -123,12 +123,23 @@
         const options = data.unions[lang]
         const defaultOption = unionElement.children[0]
         const para = document.getElementById("union-para");
+        const payment_para = document.getElementById("payment_label_union");
         if(lang == "fr"){
             para.innerText = "Selectionnez votre Union"
         }else {
             data.unions["en"]
             para.innerText = "Select your Union"
         }
+
+        if(lang == "fr") {
+            payment_para.innerText = "Je paierai mes propres dépenses par l'intermédiaire de mon union."
+        }else if(lang == "es") {
+            payment_para.innerText = "Pagaré mis propios gastos a través de mi union."
+        }else {
+            payment_para.innerText = "I will pay my own expenses through my union."
+        }
+
+
 
 
         const optionElements = options.map((option) => {
