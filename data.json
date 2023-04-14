@@ -1,6 +1,6 @@
 {"unions":{
-    "en": ["Atlantic Caribbean", "Belize", "Jamaica", "Dutch Caribbean", "Caribbean Union", "IADPA", "IATS", "Inter-American Division", "Montemorelos University" ],
-    "es": ["Unión Central de México", "Unión Centroamericana Sur", "Unión Colombiana del Norten", "Unión Colombiana del Sur", "Unión Cubana", "Unión Dominicana", "Unión Guatemalteca", "Unión Hondureña", "Unión Interoceánica de México", "Unión Mexicana de Chiapas", "Union Mexicana del Norte", "Unión Mexicana del Sureste", "Unión Panameña", "Unión Puertorriqueña", "Unión Salvadoreña", "Unión Venezolana Oriental", "Unión Venezolana Occidental", "GEMA Editores", "IADPA", "SETAI", "Universidad de Montemorelos", "División Interamericana"],
+    "en": ["Atlantic Caribbean", "Belize", "Jamaica", "Dutch Caribbean", "Caribbean Union","Health Institutions","Food Company","Inter-American Division","", "Inter-American Division","Presenter", "Montemorelos University" ],
+    "es": ["IADPA","IATS","Montemorelos University","GEMA"," Food Company", "Health Institutions", "Inter-American Division"," Presenter", "Unión Central de México", "Unión Centroamericana Sur", "Unión Colombiana del Norten", "Unión Colombiana del Sur", "Unión Cubana", "Unión Dominicana", "Unión Guatemalteca", "Unión Hondureña", "Unión Interoceánica de México", "Unión Mexicana de Chiapas", "Union Mexicana del Norte", "Unión Mexicana del Sureste", "Unión Panameña", "Unión Puertorriqueña", "Unión Salvadoreña", "Unión Venezolana Oriental", "Unión Venezolana Occidental", "GEMA Editores", "IADPA", "SETAI", "Universidad de Montemorelos", "División Interamericana"],
     "fr": ["Union des Antilles et Guyane Françaises", "Union d’Haïti"]
     
 }}
