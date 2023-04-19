@@ -8,20 +8,6 @@
     const formButton = document.getElementById("form_button");
     const formInputs = document.getElementsByTagName('input');
 
-    // for(let i = 0; i < formInputs.length; i++){
-    //     if(formInputs[i].value == ''){
-    //         formButton.setAttribute('disabled', '')
-    //     }else {
-    //         formButton.removeAttribute('disabled')
-    //     }
-    // }
-
-
-    // if(form.getElementsByTagName('input'))
-    
-
-
-
     const togglefields = (hide) => {
         const notVirtualElements = document.getElementsByClassName("not-virtual")
         Array.from(notVirtualElements).forEach(element => {
@@ -102,10 +88,19 @@
     const msg = document.getElementById("msg")
     const scriptURL = "https://script.google.com/macros/s/AKfycbyW2_2diylogBRguVJX5QDAbYMDmA45C9gqL3IjTInAxXg_wEVWSZlODpcvG5wJIJQm/exec";
     const form_reg = document.forms["submit-to-google-sheet"];
+    const modalTitle = document.querySelector('#exampleModalLabel');
+    const anchorModal = document.getElementById('anchor_modal');
+    const modal = document.getElementById('exampleModal')
+    anchorModal.removeAttribute('href');
+    modalTitle.innerText = "Please fill out form";
+
+
     form.addEventListener('submit', e => {
         e.preventDefault();
+        modalTitle.innerText = "Submission Complete";
         fetch(scriptURL, { method: "POST", body: new FormData(form_reg) })
             .then(response => {
+                anchorModal.setAttribute('href', '../index.html')
                 msg.classList.toggle("alert")
                 msg.classList.toggle("alert-success")
                 msg.classList.toggle("text-center")
