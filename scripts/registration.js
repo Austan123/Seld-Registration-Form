@@ -114,6 +114,7 @@
         const para = document.getElementById("union-para");
         const payment_para = document.getElementById("payment_label_union");
         const langAlert = document.getElementById("language_alert");
+        const firstAndLast = document.getElementById("first_and_last");
         if(lang == "fr"){
             para.innerText = "Selectionnez votre Union"
         }else {
@@ -136,6 +137,14 @@
         }
         else{
             langAlert.innerText = "To register, select your language where it says: Select Language at the top right of the page."
+        }
+
+        if(lang == 'es') {
+            firstAndLast.innerText = "Nombre y apellido:"
+        }else if(lang == 'fr'){
+            firstAndLast.innerText = "Prénom et nom:"
+        }else{
+            firstAndLast.innerText = "First & Last Name:"
         }
 
 
