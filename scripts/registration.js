@@ -1,10 +1,21 @@
 (async () => {
-    const inPersonNode = document.getElementById("attendance-person")
-    const virtualNode = document.getElementById("attendance-virtually")
-    const no_accommodation = document.getElementById("no-accommodation")
-    const accommodation = document.getElementById("accommodation")
-    const select = document.getElementById("type-accomodation")
-    const form = document.getElementById("grab-Form")
+    const inPersonNode = document.getElementById("attendance-person");
+    const virtualNode = document.getElementById("attendance-virtually");
+    const no_accommodation = document.getElementById("no-accommodation");
+    const accommodation = document.getElementById("accommodation");
+    const select = document.getElementById("type-accomodation");
+    const form = document.getElementById("grab-Form");
+    const formButton = document.getElementById("form_button");
+
+
+    if(document.forms['submit-to-google-sheet'].first_name.value === ""){
+        formButton.setAttribute('disabled', '')
+    }else{
+        formButton.removeAttribute('disabled')
+    }
+    
+
+
 
     const togglefields = (hide) => {
         const notVirtualElements = document.getElementsByClassName("not-virtual")
@@ -17,7 +28,6 @@
                 element.setAttribute("required", "")
                 element.required = true;
             }
-
         });
 
         
@@ -81,7 +91,6 @@
         e.preventDefault()
         const formData = new FormData(e.target);
         const data = [...formData.entries()]
-
         console.log(data);
     })
 
