@@ -6,13 +6,18 @@
     const select = document.getElementById("type-accomodation");
     const form = document.getElementById("grab-Form");
     const formButton = document.getElementById("form_button");
+    const formInputs = document.getElementsByTagName('input');
+
+    // for(let i = 0; i < formInputs.length; i++){
+    //     if(formInputs[i].value == ''){
+    //         formButton.setAttribute('disabled', '')
+    //     }else {
+    //         formButton.removeAttribute('disabled')
+    //     }
+    // }
 
 
-    if(document.forms['submit-to-google-sheet'].first_name.value === ""){
-        formButton.setAttribute('disabled', '')
-    }else{
-        formButton.removeAttribute('disabled')
-    }
+    // if(form.getElementsByTagName('input'))
     
 
 
