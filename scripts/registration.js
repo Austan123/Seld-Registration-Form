@@ -85,7 +85,6 @@
         console.log(data);
     })
 
-    const button = document.getElementById("form_button");
     const msg = document.getElementById("msg")
     const scriptURL = "https://script.google.com/macros/s/AKfycbyW2_2diylogBRguVJX5QDAbYMDmA45C9gqL3IjTInAxXg_wEVWSZlODpcvG5wJIJQm/exec";
     const form_reg = document.forms["submit-to-google-sheet"];
@@ -97,17 +96,7 @@
                 msg.classList.toggle("alert-success")
                 msg.classList.toggle("text-center")
                 msg.innerHTML = "Thank you for your submission!"
-                setTimeout(function () {
-                    msg.innerHTML = ""
-                    msg.classList.toggle("alert")
-                    msg.classList.toggle("alert-success")
-                    msg.classList.toggle("text-center")
-                }, 5000)
                 form.reset();
-                setTimeout(function () {
-                    button.onclick = document.location.href = "../index.html"
-                }, 2000)
-
             })
             .catch(error => console.error("Error!", error.message))
     })

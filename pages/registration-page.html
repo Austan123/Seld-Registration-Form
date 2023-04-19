@@ -50,8 +50,10 @@
         <!-- FORM BODY -->
 
         <div class="alert alert-info text-center text-dark h1" role="alert">
-            
-            Please use Google Translator above to change language for the appropriate Unions to display. <h4> <br>  Ex: French shows French Unions, Spanish shows Spanish Unions, and English shows English Unions. </h4> </div>
+
+            Please use Google Translator above to change language for the appropriate Unions to display. <h4> <br> Ex:
+                French shows French Unions, Spanish shows Spanish Unions, and English shows English Unions. </h4>
+        </div>
 
         <form class="d-flex flex-column justify-content-center wrapper" id="grab-Form" method="POST"
             name="submit-to-google-sheet">
@@ -147,7 +149,8 @@
                 <label>I am a delegate of my organization/institution and they are covering my expenses.</label>
                 <br>
                 <input type="radio" name="payment" value="I will pay my own expenses through my union" required>
-                <label class="payment_label" id="payment_label_union">I will pay my own expenses through my union.</label>
+                <label class="payment_label" id="payment_label_union">I will pay my own expenses through my
+                    union.</label>
             </fieldset>
             <br>
             <fieldset class="input_field not-virtual">
@@ -208,9 +211,11 @@
             <fieldset class="input_field  not-virtual not-accommodation not-single">
                 <label>Is your roommate participating in the conference?</label> <br />
                 <label> Yes </label>
-                <input class="not-virtual not-single not-accommodation" type="radio" name="participating" id="participating" value="Yes">
+                <input class="not-virtual not-single not-accommodation" type="radio" name="participating"
+                    id="participating" value="Yes">
                 <label>No </label>
-                <input class="not-virtual not-single not-accommodation" type="radio" name="participating" id="participating" value="No">
+                <input class="not-virtual not-single not-accommodation" type="radio" name="participating"
+                    id="participating" value="No">
                 <p> (If yes, he/she must register separately)</p>
             </fieldset>
 
@@ -219,14 +224,16 @@
             <fieldset class="input_field  not-virtual not-accommodation not-single">
                 <p>What is the name of your roommate?</p>
                 <label> First & Last Name: </label>
-                <input class="not-virtual not-single not-accommodation" type="text" name="fullname_roommate" id="roommate" placeholder="">
+                <input class="not-virtual not-single not-accommodation" type="text" name="fullname_roommate"
+                    id="roommate" placeholder="">
             </fieldset>
             <br>
 
             <fieldset class="input_field  not-virtual not-accommodation not-single">
                 <p>What is the email address of your roommate?</p>
                 <label> Email Address: </label>
-                <input class="not-virtual not-single not-accommodation" type="text" name="email_roommate" id="roommate" placeholder="Email">
+                <input class="not-virtual not-single not-accommodation" type="text" name="email_roommate" id="roommate"
+                    placeholder="Email">
             </fieldset>
             <br>
             <fieldset class="input_field  not-virtual not-accommodation">
@@ -331,25 +338,32 @@
             <br>
 
             <div class="d-flex justify-content-center pb-2">
-                <button id="form_button" class="btn btn-dark mx-auto" type="submit" name="formButton"> Submit </button>
+                <button id="form_button" class="btn btn-dark mx-auto" type="submit" name="formButton"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal"> Submit </button>
             </div>
-            <span role="alert" id="msg"></span>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Submission Complete</h1>
+                        </div>
+                        <div class="modal-body" id="msg">
+
+                        </div>
+                        <div class="modal-footer">
+                            <a class="text-white" href="../index.html"><button id="modal_close" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </form>
         <div class="empty-box"></div>
     </main>
-    <!-- FOOTER -->
-    <!-- <footer class="custom-footer text-white py-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">Footer content here</div>
-                <div class="col-md-6 text-right">© 2023 My Website</div>
-            </div>
-        </div>
-    </footer> -->
-    <!-- WEBSITE SCRIPTS -->
     <script src="../scripts/index.js"></script>
     <script src="../scripts/registration.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
     <script type="text/javascript"
         src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
