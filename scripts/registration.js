@@ -103,9 +103,10 @@
 
     form.addEventListener('submit', e => {
         e.preventDefault();
-        modalTitle.innerText = "Submission Complete";
+        modalTitle.innerText = "Please wait...";
         fetch(scriptURL, { method: "POST", body: new FormData(form_reg) })
             .then(response => {
+                modalTitle.innerText = "Submission Complete";
                 anchorModal.setAttribute('href', '../index.html')
                 msg.classList.toggle("alert")
                 msg.classList.toggle("alert-success")
