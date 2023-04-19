@@ -5,8 +5,8 @@
     const accommodation = document.getElementById("accommodation");
     const select = document.getElementById("type-accomodation");
     const form = document.getElementById("grab-Form");
-    const formButton = document.getElementById("form_button");
-    const formInputs = document.getElementsByTagName('input');
+    const virtual = document.getElementById('virtual');
+    
 
     const togglefields = (hide) => {
         const notVirtualElements = document.getElementsByClassName("not-virtual")
@@ -14,10 +14,14 @@
             if (hide) {
                 element.style.display = "none"
                 element.removeAttribute("required")
+                virtual.style.display = "inline-block"
+                virtual.style.fontWeight = "bold"
+                virtual.innerText = 'Virtual Attendance Fee: $25'
             } else {
                 element.style.display = "inline-block"
                 element.setAttribute("required", "")
                 element.required = true;
+                virtual.style.display = "none"
             }
         });
 
@@ -55,6 +59,7 @@
         });
     }
 
+
     inPersonNode.addEventListener("click", (e) => {
         togglefields(false)
     })
@@ -78,6 +83,7 @@
         })
 
     })
+
     form.addEventListener("submit", (e) => {
         e.preventDefault()
         const formData = new FormData(e.target);
