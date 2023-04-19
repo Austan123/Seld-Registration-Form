@@ -113,6 +113,7 @@
         const defaultOption = unionElement.children[0]
         const para = document.getElementById("union-para");
         const payment_para = document.getElementById("payment_label_union");
+        const langAlert = document.getElementById("language_alert");
         if(lang == "fr"){
             para.innerText = "Selectionnez votre Union"
         }else {
@@ -126,6 +127,15 @@
             payment_para.innerText = "Pagaré mis propios gastos a través de mi union."
         }else {
             payment_para.innerText = "I will pay my own expenses through my union."
+        }
+
+        if(lang == 'fr'){
+            langAlert.innerText = "Pour vous inscrire, sélectionnez votre langue à l'endroit indiqué : Select Language en haut à droite de la page."
+        }else if(lang == 'es'){
+            langAlert.innerText = "Para registrarse, seleccione su idioma  donde dice: Select Language en la parte superior a la derecha de la página."
+        }
+        else{
+            langAlert.innerText = "To register, select your language where it says: Select Language at the top right of the page."
         }
 
 

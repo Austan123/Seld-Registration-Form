@@ -49,10 +49,9 @@
         </div>
         <!-- FORM BODY -->
 
-        <div class="alert alert-info text-center text-dark h1" role="alert">
+        <div class="alert alert-info text-center text-dark h1" role="alert" id="language_alert">
 
-            Please use Google Translator above to change language for the appropriate Unions to display. <h4> <br> Ex:
-                French shows French Unions, Spanish shows Spanish Unions, and English shows English Unions. </h4>
+            To register, select your language where it says: Select Language at the top right of the page.
         </div>
 
         <form class="d-flex flex-column justify-content-center wrapper" id="grab-Form" method="POST"
@@ -131,6 +130,11 @@
                     </option>
                 </select>
             </fieldset>
+
+            <div class="input_field">
+                <label> Name of Local Field or Employing Institution:</label>
+                <input type="text" class="input w-100" name="Local_Field_or_Employing_Institution" required>
+            </div>
 
             <br>
             <fieldset class="input_field">
