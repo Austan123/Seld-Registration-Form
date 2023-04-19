@@ -131,6 +131,7 @@
         const payment_para = document.getElementById("payment_label_union");
         const langAlert = document.getElementById("language_alert");
         const firstAndLast = document.getElementById("first_and_last");
+
         if(lang == "fr"){
             para.innerText = "Selectionnez votre Union"
         }else {
@@ -147,7 +148,7 @@
         }
 
         if(lang == 'fr'){
-            langAlert.innerText = "Pour vous inscrire, sélectionnez votre langue à l'endroit indiqué : Select Language en haut à droite de la page."
+            langAlert.innerText = "Pour vous inscrire, sélectionnez votre langue à l'endroit indiqué: Select Language en haut à droite de la page."
         }else if(lang == 'es'){
             langAlert.innerText = "Para registrarse, seleccione su idioma  donde dice: Select Language en la parte superior a la derecha de la página."
         }
