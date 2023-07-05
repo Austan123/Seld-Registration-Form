@@ -44,41 +44,49 @@
 
 
         <!-- GOOGLE TRANSLATE -->
-        <div class="container">
+        <div class="container" >
             <div class="box mb-2" id="google_translate_element"></div>
         </div>
         <!-- FORM BODY -->
 
         <form class="d-flex flex-column justify-content-center wrapper" id="grab-Form" method="POST"
-            name="submit-to-google-sheet">
+            name="submit-to-google-sheet" >
+            <P style="color: red;"> <b>Thank you for your overwhelming response and interest in our event. We greatly appreciate the registrations we have received.
+
+                Please note that the registration period has now ended, and we are no longer accepting submissions. We apologize for any inconvenience caused to those who missed the deadline.
+                
+                We value your support and enthusiasm for our event. If you have any questions, please feel free to contact us.
+                
+                Thank you for your understanding.</b></P>
+                <br>
             <div class="title">
                 Registration Form
             </div>
 
-            <div class="input_field">
+            <div class="input_field" >
                 <label> First Name:</label>
-                <input type="text" class="input w-100" name="first_name" required>
+                <input type="text" class="input w-100" name="first_name" required disabled>
             </div>
 
             <div class="input_field">
                 <label> Surname: </label>
-                <input type="text" class="input w-100" name="surname" required>
+                <input type="text" class="input w-100" name="surname" required disabled>
             </div>
 
             <div class="input_field">
                 <label> Email Address:</label>
-                <input type="text" class="input w-100" name="email_address" required>
+                <input type="text" class="input w-100" name="email_address" required disabled>
             </div>
 
             <div class="input_field">
                 <label> Phone Number:</label>
-                <input type="tel" class="input w-100" name="phone" required>
+                <input type="tel" class="input w-100" name="phone" required disabled>
             </div>
             <br>
-            <fieldset class="input_field" required>
+            <fieldset class="input_field" required disabled>
                 <label> Gender:</label>
                 <div class="custom_select">
-                    <select name="gender" required>
+                    <select name="gender" required disabled>
                         <option value="">Select</option>
                         <option value="male">Male</option>
                         <option value="female">Female</option>
@@ -86,15 +94,15 @@
                 </div>
             </fieldset>
             <br>
-            <fieldset class="input_field">
+            <fieldset class="input_field"disabled>
                 <label for="Current location">Country Where You Live?</label>
-                <textarea class="textarea w-100 px-2" name="country" required></textarea>
+                <textarea class="textarea w-100 px-2" name="country" required disabled></textarea>
             </fieldset>
             <br>
-            <fieldset class="custom_select">
+            <fieldset class="custom_select" disabled>
                 <p>Select Your Leader Category</p>
                 <label>Category: </label>
-                <select name="category" id="catagory" required>
+                <select name="category" id="catagory" required disabled>
                     <option value="">Select</option>
                     <option value="President">President</option>
                     <option value="Secretary & HR Directors">Secretaries and Human Resource Directors</option>
@@ -108,9 +116,9 @@
                 </select>
             </fieldset>
             <br>
-            <fieldset class="custom_select" required>
+            <fieldset class="custom_select" required disabled>
                 <p id="union-para">Select your Union</p>
-                <select name="union" id="selection" required>
+                <select name="union" id="selection" required disabled>
                     <option value="">Select</option>
                     <option value="Atlantic Caribbean">Atlantic Caribbean Union </option>
                     <option value="Belize ">Belize Union</option>
@@ -152,7 +160,7 @@
 
             <div class="input_field">
                 <label> Name of Local Field or Employing Institution:</label>
-                <input type="text" class="input w-100" name="Local_Field_or_Employing_Institution" required>
+                <input type="text" class="input w-100" name="Local_Field_or_Employing_Institution" required disabled>
             </div>
 
             <br>
@@ -168,16 +176,16 @@
             <fieldset class="input_field">
                 <p>Select your payment Method.</p>
                 <input type="radio" name="payment"
-                    value="I am a delegate of my organization/institution and they are covering my expenses" required>
+                    value="I am a delegate of my organization/institution and they are covering my expenses" required disabled>
                 <label>I am a delegate of my organization/institution and they are covering my expenses.</label>
                 <br>
-                <input type="radio" name="payment" value="I will pay my own expenses through my union" required>
+                <input type="radio" name="payment" value="I will pay my own expenses through my union" required disabled>
                 <label class="payment_label" id="payment_label_union">I will pay my own expenses through my
                     union.</label>
             </fieldset>
            <div id="virtual"><strong></strong></div>
             <br>
-            <fieldset class="input_field not-virtual">
+            <fieldset class="input_field not-virtual" disabled>
                 <p>Are you a U.S. citizen or permanent resident?</p>
                 <label> Yes </label>
                 <input class="not-virtual" type="radio" name="status" id="status-yes" value="Yes">
@@ -186,7 +194,7 @@
                 <input class="not-virtual" type="radio" name="status" id="status-no" value="No">
             </fieldset>
             <br>
-            <fieldset class="input_field  not-virtual">
+            <fieldset class="input_field  not-virtual" disabled>
                 <p>Do you have a VISA to travel to the USA?</p>
                 <p>(If no, you should immediately make the request to the division for a letter to the US embassy in
                     your
@@ -199,7 +207,7 @@
 
             <br>
 
-            <fieldset class="input_field  not-virtual">
+            <fieldset class="input_field  not-virtual" disabled>
                 <p>Have you received your COVID Vaccination?</p>
                 <p> (The US government requires all non-US Citizens and non-residents to be vaccinated for COVID for
                     entry
@@ -212,7 +220,7 @@
             </fieldset>
             <br>
 
-            <fieldset class="input_field  not-virtual">
+            <fieldset class="input_field  not-virtual" disabled>
                 <label>Will you need hotel accommodation?</label> <br />
                 <label> Yes </label>
                 <input class="not-virtual" type="radio" name="accommodation" id="accommodation" value="Yes">
@@ -220,7 +228,7 @@
                 <input class="not-virtual" type="radio" name="accommodation" id="no-accommodation" value="No">
             </fieldset>
 
-            <fieldset class="input_field  not-virtual not-accommodation">
+            <fieldset class="input_field  not-virtual not-accommodation" disabled>
                 <br />
                 <p>What type of accommodation?</p>
                 <select class="not-virtual not-accommodation" name="type-accomodation" id="type-accomodation">
@@ -232,7 +240,7 @@
             </fieldset>
             <br>
 
-            <fieldset class="input_field  not-virtual not-accommodation not-single">
+            <fieldset class="input_field  not-virtual not-accommodation not-single" disabled>
                 <label>Is your roommate participating in the conference?</label> <br />
                 <label> Yes </label>
                 <input class="not-virtual not-single not-accommodation" type="radio" name="participating"
@@ -245,7 +253,7 @@
 
 
             <br>
-            <fieldset class="input_field  not-virtual not-accommodation not-single">
+            <fieldset class="input_field  not-virtual not-accommodation not-single" disabled>
                 <p>What is the name of your roommate?</p>
                 <label id="first_and_last"> First & Last Name: </label>
                 <input class="not-virtual not-single not-accommodation" type="text" name="fullname_roommate"
@@ -253,14 +261,14 @@
             </fieldset>
             <br>
 
-            <fieldset class="input_field  not-virtual not-accommodation not-single">
+            <fieldset class="input_field  not-virtual not-accommodation not-single" disabled>
                 <p>What is the email address of your roommate?</p>
                 <label> Email Address: </label>
                 <input class="not-virtual not-single not-accommodation" type="text" name="email_roommate" id="roommate"
                     placeholder="Email">
             </fieldset>
             <br>
-            <fieldset class="input_field  not-virtual not-accommodation">
+            <fieldset class="input_field  not-virtual not-accommodation" disabled>
                 <h5> NOTE: </h5>
                 <p> If you are planning to arrive at the hotel earlier than July 24 and leave later than July 27, you
                     will need to make your reservation directly with the hotel for those extra days.</p>
@@ -269,39 +277,39 @@
             <hr style="background-color: black;">
             <div class="title not-virtual">Travel Information</div>
             <br>
-            <fieldset class="input_field not-virtual">
+            <fieldset class="input_field not-virtual" disabled>
                 <label>Arrival Date: </label>
                 <input type="date" name="arrival" id="date" min="2023-07-21" max="2023-07-30">
                 <label>Departure Date: </label>
                 <input type="date" name="departure" id="date" min="2023-07-21" max="2023-07-30">
             </fieldset>
             <br>
-            <fieldset class="input_field not-virtual">
+            <fieldset class="input_field not-virtual" disabled>
                 <label>Arrival Time:</label>
                 <input type="time" name="arrival_time">
             </fieldset>
             <br>
-            <fieldset class="input_field not-virtual">
+            <fieldset class="input_field not-virtual" disabled>
                 <label>Airline and Arrival Flight Number:</label>
                 <input type="textarea" name="arrival_flight_number">
             </fieldset>
             <br>
-            <fieldset class="input_field not-virtual">
+            <fieldset class="input_field not-virtual" disabled>
                 <label>Flying From:</label>
-                <input type="textarea" name="flyingfrom">
+                <input type="textarea" name="flyingfrom" disabled>
             </fieldset>
             <br>
-            <fieldset class="input_field not-virtual">
+            <fieldset class="input_field not-virtual" disabled>
                 <label>Departure Time:</label>
-                <input type="time" name="departure_time">
+                <input type="time" name="departure_time" disabled>
             </fieldset>
             <br>
-            <fieldset class="input_field not-virtual">
+            <fieldset class="input_field not-virtual" disabled>
                 <label>Airline and departure flight number:</label>
                 <input type="textarea" name="departure_flight_number">
             </fieldset>
             <br>
-            <fieldset class="input_field not-virtual">
+            <fieldset class="input_field not-virtual" disabled>
                 <label>Flying to:</label>
                 <input type="textarea" name="flyingto">
             </fieldset>
@@ -360,9 +368,9 @@
 
             <br>
 
-            <div class="d-flex justify-content-center pb-2">
+            <div class="d-flex justify-content-center pb-2" disabled>
                 <button id="form_button" class="btn btn-dark mx-auto" type="submit" name="formButton"
-                    data-bs-toggle="modal" data-bs-target="#exampleModal"> Submit </button>
+                    data-bs-toggle="modal" data-bs-target="#exampleModal" disabled> Submit </button>
             </div>
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
